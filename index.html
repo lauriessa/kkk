@@ -274,178 +274,141 @@
 
 		
 
-		<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meet the Team</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+<article id="team" class="wrapper style4">
+    <div class="container">
+        <style>
+            #team .team-header {
+                text-align: center;
+                margin-bottom: 50px;
+            }
 
-        body {
-            background-color: #222222; /* Dark background */
-            color: #ffffff;
-            font-family: 'Inter', sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 60px 20px;
-            min-height: 100vh;
-        }
+            #team .team-header h1 {
+                font-size: 32px;
+                font-weight: 700;
+                color: #ffffff; /* Explicitly white for this section header */
+            }
 
-        .header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
+            #team .team-container {
+                display: flex;
+                gap: 25px;
+                justify-content: center;
+                flex-wrap: wrap;
+                max-width: 1000px;
+                margin: 0 auto;
+            }
 
-        .header h4 {
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 15px;
-            color: #eeeeee;
-        }
+            #team .card {
+                border-radius: 12px;
+                overflow: hidden;
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+                text-align: left; /* Ensures text stays left-aligned */
+            }
 
-        .header h1 {
-            font-size: 32px;
-            font-weight: 700;
-        }
+            #team .card img {
+                width: 100%;
+                height: 320px;
+                object-fit: cover;
+                display: block;
+            }
 
-        .team-container {
-            display: flex;
-            gap: 25px;
-            justify-content: center;
-            flex-wrap: wrap;
-            max-width: 1000px;
-        }
+            #team .card-body {
+                padding: 30px 25px;
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+            }
 
-        .card {
-            border-radius: 12px;
-            overflow: hidden;
-            width: 300px;
-            display: flex;
-            flex-direction: column;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-        }
+            #team .card-body h3 {
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 25px;
+                color: #ffffff;
+            }
 
-        .card img {
-            width: 100%;
-            height: 320px;
-            object-fit: cover;
-            display: block;
-        }
+            #team .card-body p {
+                font-size: 14px;
+                line-height: 1.6;
+                margin-bottom: 20px;
+                color: #ffffff;
+            }
 
-        .card-body {
-            padding: 30px 25px;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-        }
+            #team .card-footer {
+                margin-top: auto;
+                padding-top: 15px;
+            }
 
-        .card-body h3 {
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 25px;
-        }
+            #team .card-footer a {
+                color: #ffffff !important;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                margin-bottom: 10px;
+                border-bottom: none; /* Removes template's default link underline */
+            }
 
-        .card-body p {
-            font-size: 14px;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
+            #team .card-footer i {
+                width: 20px;
+                font-size: 16px;
+                margin-right: 8px;
+            }
 
-        .card-footer {
-            margin-top: auto;
-            padding-top: 15px;
-        }
+            /* Background Colors for Cards */
+            #team .bg-red { background-color: #ce4a4d; }
+            #team .bg-green { background-color: #5c8e76; }
+            #team .bg-blue { background-color: #177495; }
+        </style>
 
-        .card-footer a {
-            color: #ffffff;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            font-size: 14px;
-            margin-bottom: 10px;
-        }
+        <div class="team-header">
+            <h4>Contact Us</h4>
+            <h1>Got an Idea? We'd Love to Hear from You!</h1>
+        </div>
 
-        .card-footer a:hover {
-            text-decoration: underline;
-        }
+        <div class="team-container">
+            <div class="card">
+                <img src="ken.png.jpg" alt="Kenneth">
+                <div class="card-body bg-red">
+                    <h3>Kenneth</h3>
+                    <p>Hello, I am Kenneth. I am a Computer Science student at the University of the Philippines Diliman. I enjoy learning about software development and solving problems through technology.</p>
+                    <p>In my free time, Kenneth enjoys practicing coding, exploring new tools, and working with classmates.</p>
+                    <div class="card-footer">
+                        <a href="mailto:kenneth@example.up.edu.ph"><i class="fa-solid fa-envelope"></i> <u>kenneth@example.up.edu.ph</u></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i> <u>LinkedIn</u></a>
+                    </div>
+                </div>
+            </div>
 
-        .card-footer i {
-            width: 20px;
-            font-size: 16px;
-            margin-right: 8px;
-        }
+            <div class="card">
+                <img src="lau.png.jpg" alt="Lauriessa">
+                <div class="card-body bg-green">
+                    <h3>Lauriessa</h3>
+                    <p>Hi, I am Lauriessa. I am currently studying Computer Science at the University of the Philippines Diliman. I am interested in combining technology with good design.</p>
+                    <p>Outside school work, Lauriessa likes learning new tools and improving both creative and technical skills.</p>
+                    <div class="card-footer">
+                        <a href="mailto:lauriessa@example.up.edu.ph"><i class="fa-solid fa-envelope"></i> <u>lauriessa@example.up.edu.ph</u></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i> <u>LinkedIn</u></a>
+                    </div>
+                </div>
+            </div>
 
-        /* Card Background Colors */
-        .bg-red {
-            background-color: #ce4a4d;
-        }
-
-        .bg-green {
-            background-color: #5c8e76;
-        }
-
-        .bg-blue {
-            background-color: #177495;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="header">
-        <h4>Contact Us</h4>
-        <h1>Got an Idea? We'd Love to Hear from You!</h1>
+            <div class="card">
+                <img src="kat.png.jpg" alt="Katrina">
+                <div class="card-body bg-blue">
+                    <h3>Katrina</h3>
+                    <p>Hello, I am Katrina. I am a Computer Science student at the University of the Philippines Diliman. I enjoy programming and strengthening my problem solving skills.</p>
+                    <p>During free time, Katrina enjoys practicing coding and building small projects to apply class learning.</p>
+                    <div class="card-footer">
+                        <a href="mailto:katrina@example.up.edu.ph"><i class="fa-solid fa-envelope"></i> <u>katrina@example.up.edu.ph</u></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i> <u>LinkedIn</u></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="team-container">
-        
-        <div class="card">
-            <img src="ken.png.jpg" alt="Kenneth">
-            <div class="card-body bg-red">
-                <h3>Kenneth</h3>
-                <p>Hello, I am Kenneth. I am a Computer Science student at the University of the Philippines Diliman. I enjoy learning about software development and solving problems through technology.</p>
-                <p>In my free time, Kenneth enjoys practicing coding, exploring new tools, and working with classmates. Kenneth looks forward to building useful and reliable solutions in the future.</p>
-                <div class="card-footer">
-                    <a href="mailto:kenneth@example.up.edu.ph"><i class="fa-solid fa-envelope"></i> <u>kenneth@example.up.edu.ph</u></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i> <u>LinkedIn</u></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="lau.png.jpg" alt="Lauriessa">
-            <div class="card-body bg-green">
-                <h3>Lauriessa</h3>
-                <p>Hi, I am Lauriessa. I am currently studying Computer Science at the University of the Philippines Diliman. I am interested in combining technology with good design. I enjoy creating solutions that are clear, simple, and user friendly.</p>
-                <p>Outside school work, Lauriessa likes learning new tools and improving both creative and technical skills. Lauriessa is excited to work on digital products that create value for people.</p>
-                <div class="card-footer">
-                    <a href="mailto:lauriessa@example.up.edu.ph"><i class="fa-solid fa-envelope"></i> <u>lauriessa@example.up.edu.ph</u></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i> <u>LinkedIn</u></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="kat.png.jpg" alt="Katrina">
-            <div class="card-body bg-blue">
-                <h3>Katrina</h3>
-                <p>Hello, I am Katrina. I am a Computer Science student at the University of the Philippines Diliman. I enjoy programming and strengthening my problem solving skills. I like applying what I learn in class to real examples.</p>
-                <p>During free time, Katrina enjoys practicing coding and building small projects. Katrina aims to create efficient and practical systems that can be used in real world settings.</p>
-                <div class="card-footer">
-                    <a href="mailto:katrina@example.up.edu.ph"><i class="fa-solid fa-envelope"></i> <u>katrina@example.up.edu.ph</u></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i> <u>LinkedIn</u></a>
-                </div>
-            </div>
-        </div>
+</article>
 
 
 		<!-- Scripts -->
