@@ -272,71 +272,181 @@
 				</div>
 			</article>
 
-		<!-- Team -->
-			<article id="team" class="wrapper style4">
-				<div class="container medium">
-					<header>
-						<h2>We'd like to hear from you.</h2>
-						<p>You can add more information about the team members here.</p>
-					</header>
-					<div class="row">
-						<div class="col-12">
-							<form method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-small">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="text" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<input type="text" name="subject" id="subject" placeholder="Subject" />
-									</div>
-									<div class="col-12">
-										<textarea name="message" id="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" /></li>
-											<li><input type="reset" value="Clear Form" class="alt" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</div>
-						<div class="col-12">
-							<hr />
-							<h3>Find me on ...</h3>
-							<ul class="social">
-								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-								<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-								<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
-								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<!--
-								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
-								<li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
-								<li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
-								<li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
-								<li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
-								<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
-								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
-								-->
-							</ul>
-							<hr />
-						</div>
-					</div>
-					<footer>
-						<ul id="copyright">
-							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
-				</div>
-			</article>
+		
+
+		<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet the Team</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #222222; /* Dark background */
+            color: #ffffff;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 60px 20px;
+            min-height: 100vh;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .header h4 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #eeeeee;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            font-weight: 700;
+        }
+
+        .team-container {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+            max-width: 1000px;
+        }
+
+        .card {
+            border-radius: 12px;
+            overflow: hidden;
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .card img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-body {
+            padding: 30px 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-body h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+
+        .card-body p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .card-footer {
+            margin-top: auto;
+            padding-top: 15px;
+        }
+
+        .card-footer a {
+            color: #ffffff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .card-footer a:hover {
+            text-decoration: underline;
+        }
+
+        .card-footer i {
+            width: 20px;
+            font-size: 16px;
+            margin-right: 8px;
+        }
+
+        /* Card Background Colors */
+        .bg-red {
+            background-color: #ce4a4d;
+        }
+
+        .bg-green {
+            background-color: #5c8e76;
+        }
+
+        .bg-blue {
+            background-color: #177495;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h4>Contact Us</h4>
+        <h1>Got an Idea? We'd Love to Hear from You!</h1>
+    </div>
+
+    <div class="team-container">
+        
+        <div class="card">
+            <img src="ken.png.jpg" alt="Kenneth">
+            <div class="card-body bg-red">
+                <h3>Kenneth</h3>
+                <p>Hello, I am Kenneth. I am a Computer Science student at the University of the Philippines Diliman. I enjoy learning about software development and solving problems through technology.</p>
+                <p>In my free time, Kenneth enjoys practicing coding, exploring new tools, and working with classmates. Kenneth looks forward to building useful and reliable solutions in the future.</p>
+                <div class="card-footer">
+                    <a href="mailto:kenneth@example.up.edu.ph"><i class="fa-solid fa-envelope"></i> <u>kenneth@example.up.edu.ph</u></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i> <u>LinkedIn</u></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="lau.png.jpg" alt="Lauriessa">
+            <div class="card-body bg-green">
+                <h3>Lauriessa</h3>
+                <p>Hi, I am Lauriessa. I am currently studying Computer Science at the University of the Philippines Diliman. I am interested in combining technology with good design. I enjoy creating solutions that are clear, simple, and user friendly.</p>
+                <p>Outside school work, Lauriessa likes learning new tools and improving both creative and technical skills. Lauriessa is excited to work on digital products that create value for people.</p>
+                <div class="card-footer">
+                    <a href="mailto:lauriessa@example.up.edu.ph"><i class="fa-solid fa-envelope"></i> <u>lauriessa@example.up.edu.ph</u></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i> <u>LinkedIn</u></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="kat.png.jpg" alt="Katrina">
+            <div class="card-body bg-blue">
+                <h3>Katrina</h3>
+                <p>Hello, I am Katrina. I am a Computer Science student at the University of the Philippines Diliman. I enjoy programming and strengthening my problem solving skills. I like applying what I learn in class to real examples.</p>
+                <p>During free time, Katrina enjoys practicing coding and building small projects. Katrina aims to create efficient and practical systems that can be used in real world settings.</p>
+                <div class="card-footer">
+                    <a href="mailto:katrina@example.up.edu.ph"><i class="fa-solid fa-envelope"></i> <u>katrina@example.up.edu.ph</u></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i> <u>LinkedIn</u></a>
+                </div>
+            </div>
+        </div>
+
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
