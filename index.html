@@ -217,34 +217,45 @@
 
 			<!-- Methods -->
 			<article id="methods" class="wrapper style3">
-				<div class="container">
-					<header>
-						<h2>Let's talk about our data science methodology.</h2>
-					</header>
-					<div class="row">
-						<div class="col-6 col-6-medium col-12-small">
-						    <article class="box style2">
-						        <a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-						        <h3><a href="#">Data Preprocessing</a></h3>
-						        <p>
-						        We processed over 91,000 data points from the Humanitarian Data Exchange (HDX) to identify key food price trends across the Philippines. Our preprocessing involved the following steps:
-						        </p>
-
-						        <ul style="text-align: left;">
-						            <li><strong>Strategic Filtering:</strong> Limited the dataset to records from 2021–2025 to reflect the current economic climate.</li>
-
-						            <li><strong>Regional Grouping:</strong> Organized the data by region and year to track how price changes moved across the country.</li>
-
-						            <li><strong>Data Intersection:</strong> Focused only on commodities consistently recorded across all regions to ensure reliable comparisons.</li>
-
-						            <li><strong>Frequency Ranking:</strong> Prioritized commodities based on the Food Consumption Survey from the 2021 Expanded National Nutrition Survey conducted by DOST–FNRI.</li>
-						        </ul>
-						    </article>
-						</div>
-					</div>
-					<footer>
-					</footer>
-				</div>
+			    <div class="container">
+			        <header>
+			            <h2>Let's talk about our data science methodology.</h2>
+			        </header>
+			
+			        <div class="row" style="display: flex; justify-content: center;">
+			            <div style="width: 70%;">
+			
+			                <article class="box style2">
+			
+			                    <img src="hdx-humanitarian-data-exchange-300.gif" 
+			                         class="image featured" 
+			                         alt="Humanitarian Data Exchange">
+			
+			                    <h3><a href="#">Data Preprocessing</a></h3>
+			
+			                    <p>
+			                        We processed over 91,000 data points from the Humanitarian Data Exchange (HDX) 
+			                        to identify key food price trends across the Philippines. Our preprocessing 
+			                        involved the following steps:
+			                    </p>
+			
+			                    <ul style="text-align: left;">
+			                        <li><strong>Strategic Filtering:</strong> Limited the dataset to records from 2021–2025 to reflect the current economic climate.</li>
+			
+			                        <li><strong>Regional Grouping:</strong> Organized the data by region and year to track how price changes moved across the country.</li>
+			
+			                        <li><strong>Data Intersection:</strong> Focused only on commodities consistently recorded across all regions to ensure reliable comparisons.</li>
+			
+			                        <li><strong>Frequency Ranking:</strong> Prioritized commodities based on the Food Consumption Survey from the 2021 Expanded National Nutrition Survey conducted by DOST–FNRI.</li>
+			
+			                        <li><strong>Handling Missing Values:</strong> Filled missing price data using interpolation between prices within the same region.</li>
+			                    </ul>
+			
+			                </article>
+			
+			            </div>
+			        </div>
+			    </div>
 			</article>
 
 			<!-- EDA -->
