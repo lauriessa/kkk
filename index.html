@@ -287,15 +287,57 @@
 									<span class="eda-arrow">&#9654;</span>
 								</button>
 								<div class="eda-sub-content">
-									<p>
-										<em>Visualizations for Research Question 1 will be displayed here.</em>
+									<p style="text-align: justify;">
+										Across the five heatmaps (2021–2025), regional price spike synchronization shows a clear but varying pattern over time.
 									</p>
-									<p>
-										We transformed our dataset into intuitive plots and graphs to illustrate and easily visualize the complex relationships and trends of price per region. To analyze the synchronization of price spikes across regions, the Pearson correlation coefficient was applied to spike ratios, allowing us to quantify how similarly regions experience price surges over time. The price spike ratio was computed by identifying spikes as prices exceeding the mean plus standard deviation for each food and region, counting the number of such spikes per month, and dividing by the total number of food items to obtain the proportion of commodities experiencing abnormal price increases. 
-										</p>
-									<p>Across the five heatmaps (2021–2025), regional price spike synchronization shows a clear but varying pattern over time.
 
-										</p>
+									<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; margin-top: 20px;">
+
+										<div style="text-align:center;">
+											<img src="corr_matrix_2021.png" style="width: 350px;">
+											<p><strong>Figure 1. Correlation of Regional Price Spike Ratios (2021)</strong></p>
+											<p style="max-width: 350px;">
+												In 2021, correlations are generally moderate and uneven, with stronger co-movement observed in some clusters while others remain weak.
+											</p>
+										</div>
+
+										<div style="text-align:center;">
+											<img src="corr_matrix_2022.png" style="width: 350px;">
+											<p><strong>Figure 2. Correlation of Regional Price Spike Ratios (2022)</strong></p>
+											<p style="max-width: 350px;">
+												In 2022, synchronization becomes very strong across nearly all regions, indicating widespread, simultaneous price spikes likely driven by a national-level shock.
+											</p>
+										</div>
+
+										<div style="text-align:center;">
+											<img src="corr_matrix_2023.png" style="width: 350px;">
+											<p><strong>Figure 3. Correlation of Regional Price Spike Ratios (2023)</strong></p>
+											<p style="max-width: 350px;">
+												In 2023, the pattern becomes more fragmented, with mixed and weaker correlations, suggesting increasing regional divergence.
+											</p>
+										</div>
+
+										<div style="text-align:center;">
+											<img src="corr_matrix_2024.png" style="width: 350px;">
+											<p><strong>Figure 4. Correlation of Regional Price Spike Ratios (2024)</strong></p>
+											<p style="max-width: 350px;">
+												Synchronization rises again in 2024, with many regions showing moderately high correlations, though not as uniformly strong as in 2022.
+											</p>
+										</div>
+
+										<div style="text-align:center;">
+											<img src="corr_matrix_2025.png" style="width: 350px;">
+											<p><strong>Figure 5. Correlation of Regional Price Spike Ratios (2025)</strong></p>
+											<p style="max-width: 350px;">
+												By 2025, the pattern stabilizes into a more balanced state, with mostly moderate correlations and a few strong regional relationships.
+											</p>
+										</div>
+
+									</div>
+
+									<p style="margin-top: 25px; text-align: justify;">
+										Notably, earlier years show tighter alignment among regions in Luzon, while variability in later years reflects differing dynamics across Luzon, Visayas, and Mindanao. Overall, the results indicate that price spike synchronization is not constant, peaking during systemic shocks and weakening when regional factors play a larger role.
+									</p>
 								</div>
 							</div>
 
@@ -342,6 +384,8 @@
 									<p>
 										This section will contain scatter plots, correlation heatmaps, and regional comparisons showing the relationship between food price volatility (2021–2025) and each region's poverty index.
 									</p>
+
+									
 								</div>
 							</div>
 
