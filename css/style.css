@@ -15,7 +15,7 @@
 .eda-accordion-btn {
     width: 100%;
     max-width: 100%;
-    background: linear-gradient(135deg, #2c3e6b 0%, #1a2a4a 100%);
+    background: linear-gradient(135deg, #2c3e6b 0%, #43B3E0 100%);
     color: #fff;
     border: none;
     padding: 18px 24px;
@@ -32,7 +32,7 @@
 }
 
 .eda-accordion-btn:hover {
-    background: linear-gradient(135deg, #3a4f8a 0%, #22345e 100%);
+    background: linear-gradient(135deg, #43B3E0 0%, #22345e 100%);
 }
 
 .eda-accordion-btn .eda-arrow {
