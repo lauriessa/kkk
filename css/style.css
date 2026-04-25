@@ -15,7 +15,7 @@
 .eda-accordion-btn {
     width: 100%;
     max-width: 100%;
-    background: linear-gradient(135deg, #2c3e6b 0%, #43B3E0 100%);
+    background: linear-gradient(135deg, #2c3e6b 0%, #1a2a4a 100%);
     color: #fff;
     border: none;
     padding: 18px 24px;
@@ -32,7 +32,69 @@
 }
 
 .eda-accordion-btn:hover {
-    background: linear-gradient(135deg, #43B3E0 0%, #22345e 100%);
+    background: linear-gradient(135deg, #3a4f8a 0%, #22345e 100%);
+}
+
+.eda-accordion-btn .eda-arrow {
+    transition: transform 0.3s;
+    font-size: 1.1em;
+    flex-shrink: 0;
+}
+
+.eda-accordion-btn.open .eda-arrow {
+    transform: rotate(90deg);
+}
+
+.eda-accordion-content {
+    display: none;
+    background: #f4f6fb;
+    padding: 18px 24px 10px 24px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.eda-accordion-content.open {
+    display: block;
+}
+
+/* =============================================
+   Sub-accordion (nested dropdowns)
+   ============================================= */
+
+.eda-sub-accordion {
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #d0d7e8;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.eda-sub-btn {
+    width: 100%;
+    max-width: 100%;
+    background: linear-gradient(90deg, #e8edf7 0%, #d6dff5 100%);
+    color: #43B3E0;;
+    border: none;
+    padding: 13px 18px;
+    font-size: 1em;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background 0.2s;
+    box-sizing: border-box;
+}
+
+.eda-sub-btn:hover {
+    background: linear-gradient(90deg, #d0d9f0 0%, #bec9ea 100%);
+}
+
+.eda-sub-btn .eda-arrow {
+    transition: transform 0.3s;
+    flex-shrink: 0;
 }
 
 .eda-sub-btn.open .eda-arrow {
