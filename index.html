@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body class="is-preload">
 	<body class="is-preload", style="font-size: 13.2px">
@@ -21,6 +22,7 @@
 					<li><a href="#overview">Overview</a></li>
 					<li><a href="#data">Data</a></li>
 					<li><a href="#methods">Methods</a></li>
+					<li><a href="#eda">EDA</a></li>
 					<li><a href="#results">Results</a></li>
 					<li><a href="#team">Team</a></li>
 				</ul>
@@ -49,7 +51,7 @@
 							rather than essential goods, while the high cost of moving products creates delays in 
 							cash flow (Lazaro, 2023). These logistics challenges do not hit every area equally. 
 							Because transport costs depend on distance and infrastructure, food prices vary 
-							significantly across different regions. This means that a family’s ability to afford 
+							significantly across different regions. This means that a family's ability to afford 
 							a meal often depends entirely on where they live, leaving those in remote or 
 
 						<div class="col-12", style="display:flex; align-items:flex-start; gap:20px; margin-bottom:20px;">
@@ -79,7 +81,7 @@
 								rise, commuters are forced to spend their limited funds on travel rather than essential
 								goods, while the high cost of moving products creates delays in cash flow (Lazaro, 2023).  These logistics challenges do not hit every area equally.
 							Because transport costs depend on distance and infrastructure, food prices vary
-							significantly across different regions. This means that a family’s ability to afford
+							significantly across different regions. This means that a family's ability to afford
 							a meal often depends entirely on where they live, leaving those in remote or
 							high-cost areas even more vulnerable to hunger.
 							</p>
@@ -167,7 +169,7 @@
                     <p>To what extent do the annual price spikes of selected food commodities coincide across regions between 2021 and 2025, and did this synchronization differ between regions with higher and lower 2023 poverty incidence among the population?</p>
 
                     <h3>2. Is it the Real Poverty Driver?</h3>
-                    <p>Is there a significant relationship between regional price volatility from 2021 to 2025 and the region’s poverty index among the population?</p>
+                    <p>Is there a significant relationship between regional price volatility from 2021 to 2025 and the region's poverty index among the population?</p>
                 </section>
             </div>
         </div>
@@ -262,6 +264,109 @@
 				</div>
 			</article>
 
+			<!-- EDA -->
+			<article id="eda" class="wrapper style2">
+				<div class="container">
+					<header>
+						<h2>Exploratory Data Analysis</h2>
+						<p>Dive into our findings for each research question below.</p>
+					</header>
+
+					<!-- Research Question 1 -->
+					<div class="eda-accordion">
+						<button class="eda-accordion-btn" onclick="toggleEDA(this)">
+							<span>&#128269; Research Question 1: Does Every Region Feel the Squeeze at the Same Time?</span>
+							<span class="eda-arrow">&#9654;</span>
+						</button>
+						<div class="eda-accordion-content">
+
+							<!-- Sub: Visualization -->
+							<div class="eda-sub-accordion">
+								<button class="eda-sub-btn" onclick="toggleSub(this)">
+									<span>&#128202; Visualization</span>
+									<span class="eda-arrow">&#9654;</span>
+								</button>
+								<div class="eda-sub-content">
+									<p>
+										<em>Visualizations for Research Question 1 will be displayed here.</em>
+									</p>
+									<p>
+										This section will contain charts, graphs, and maps showing how annual price spikes of selected food commodities coincide (or differ) across Philippine regions from 2021 to 2025, broken down by poverty incidence classification.
+									</p>
+								</div>
+							</div>
+
+							<!-- Sub: Hypothesis Testing -->
+							<div class="eda-sub-accordion">
+								<button class="eda-sub-btn" onclick="toggleSub(this)">
+									<span>&#128203; Hypothesis Testing</span>
+									<span class="eda-arrow">&#9654;</span>
+								</button>
+								<div class="eda-sub-content">
+									<p>
+										<em>Hypothesis testing results for Research Question 1 will be displayed here.</em>
+									</p>
+									<p>
+										<strong>Hypothesis:</strong> The co-movement of annual surges in selected food items differs significantly across regions and varies according to their 2023 poverty incidence classification.
+									</p>
+									<p>
+										This section will include statistical tests, p-values, and conclusions on whether price spike synchronization significantly differs between high- and low-poverty regions.
+									</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<!-- Research Question 2 -->
+					<div class="eda-accordion">
+						<button class="eda-accordion-btn" onclick="toggleEDA(this)">
+							<span>&#128269; Research Question 2: Is Price Volatility the Real Poverty Driver?</span>
+							<span class="eda-arrow">&#9654;</span>
+						</button>
+						<div class="eda-accordion-content">
+
+							<!-- Sub: Visualization -->
+							<div class="eda-sub-accordion">
+								<button class="eda-sub-btn" onclick="toggleSub(this)">
+									<span>&#128202; Visualization</span>
+									<span class="eda-arrow">&#9654;</span>
+								</button>
+								<div class="eda-sub-content">
+									<p>
+										<em>Visualizations for Research Question 2 will be displayed here.</em>
+									</p>
+									<p>
+										This section will contain scatter plots, correlation heatmaps, and regional comparisons showing the relationship between food price volatility (2021–2025) and each region's poverty index.
+									</p>
+								</div>
+							</div>
+
+							<!-- Sub: Hypothesis Testing -->
+							<div class="eda-sub-accordion">
+								<button class="eda-sub-btn" onclick="toggleSub(this)">
+									<span>&#128203; Hypothesis Testing</span>
+									<span class="eda-arrow">&#9654;</span>
+								</button>
+								<div class="eda-sub-content">
+									<p>
+										<em>Hypothesis testing results for Research Question 2 will be displayed here.</em>
+									</p>
+									<p>
+										<strong>Hypothesis:</strong> There is a statistically significant association between the magnitude of regional market variability from 2021 to 2025 and the level of deprivation experienced by the population within each region.
+									</p>
+									<p>
+										This section will present correlation coefficients, regression results, and statistical significance tests linking price volatility to poverty incidence across regions.
+									</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</article>
+
 			<!-- Results -->
 			<article id="results" class="wrapper style3">
 				<div class="container">
@@ -297,7 +402,7 @@
 				<div class="container">
 					<header style="text-align: center; color: white; margin-bottom: 50px;">
 						<p style="margin-bottom: 0; font-size: 1.2em;">Contact Us</p>
-						<h2 style="font-size: 2.5em; font-weight: 700; color: white; border: none;">Got an Idea? We’d Love to Hear from You!</h2>
+						<h2 style="font-size: 2.5em; font-weight: 700; color: white; border: none;">Got an Idea? We'd Love to Hear from You!</h2>
 					</header>
 					
 					<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
@@ -373,31 +478,19 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+			<script>
+				function toggleEDA(btn) {
+					btn.classList.toggle('open');
+					var content = btn.nextElementSibling;
+					content.classList.toggle('open');
+				}
+
+				function toggleSub(btn) {
+					btn.classList.toggle('open');
+					var content = btn.nextElementSibling;
+					content.classList.toggle('open');
+				}
+			</script>
+
 	</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
