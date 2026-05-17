@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>OVERVIEW | ₱RICE CHECK!</title>
+
+<!-- ROBOTO MONO -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+<!-- EXTERNAL CSS FILE -->
+    <link rel="stylesheet" href="format.css">
+</head>
+
+<body>
+
+<!-- ================= TITLE IMAGE ================= -->
+
+<div class="title">
+
+    <img src="others/title.png" alt="Price Check Title">
+
+</div>
+
+<!-- ================= VISUALIZATION ================= -->
+
+<div class="box">
+
+    <div class="section-title">
+        VISUALIZATION
+    </div>
+
+    <div class="paragraph-text">
+        To help visualize and better understand the relationship between the variables, 
+        a scatter plot was used to display the association between poverty incidence and food price volatility across regions. 
+        Each point in the graph represents a region, positioned according to its corresponding poverty level (x-axis) and 
+        volatility measure (y-axis).
+        <br><br>
+    </div>
+
+    <div style="display: flex; justify-content: center;">
+        <img src="eda2/eda2_scatterplot.jpg" alt="scatterplot" style="width: 850px; border: 1px solid #111; margin-bottom: 20px;">
+    </div>
+
+    <div class="paragraph-text">
+        The scatter plot ABOVE shows a downward-sloping trendline, indicating a negative relationship between the two variables. 
+        The data points follow a relatively consistent downward pattern, implying that the relationship is not random. 
+        While some variation exists across regions, the overall distribution supports the 
+        presence of an inverse association between poverty and volatility. 
+        Furthermore, the pattern appears approximately linear, 
+        as the points cluster around the fitted line without significant curvature or directional shifts.
+    </div>
+
+</div>
+
+<!-- ================= HYPOTHESIS TESTING 1 ================= -->
+
+<div class="box">
+
+    <div class="section-title">
+        HYPOTHESIS TESTING
+    </div>
+
+    <div class="paragraph-text">
+
+        As the data consists of cross-sectional regional observations, we analyzed the relationship between 
+        food price volatility and poverty incidence using both Pearson and Spearman correlation tests. 
+        These tests are appropriate for determining whether a statistically significant association exists between 
+        two variables.
+        <br><br>
+        The Pearson correlation test measures the strength and direction of a linear relationship, 
+        while the Spearman correlation test assesses a monotonic relationship, which does not require 
+        linearity and is more robust to non-normal data and outliers. Using both methods ensures that the 
+        results are consistent and reliable.
+        <br><br>
+        This approach aligns with the objective of the study: to determine whether variations in food price volatility 
+        are associated with differences in poverty levels across regions.
+        <br><br>
+        For both tests, the hypotheses are defined as follows:
+        <br><br>
+            <ul style="padding-left: 50px;">
+                <li>Null Hypothesis: There is no relationship between food price volatility and poverty incidence.</li>
+                <li>Alternative Hypothesis: There is a relationship between food price volatility and poverty incidence.</li>
+            </ul>
+        <br><br>
+        A significance level of alpha = 0.05 was used. 
+        When the p-value is less than 0.05, the null hypothesis is rejected, 
+        indicating a statistically significant relationship.
+
+    </div>
+
+</div>
+
+
+<!-- ================= HYPOTHESIS TESTING 3 ================= -->
+
+<div class="box">
+
+    <div class="section-title">
+        HYPOTHESIS TESTING
+    </div>
+
+    <div class="paragraph-text">
+
+        Since both p-values are less than the significance level, we reject the null hypothesis in both cases. 
+        This indicates, with 95% confidence, that there is a statistically significant relationship between 
+        food price volatility and poverty incidence.
+        <br><br>
+        Additionally, both correlation coefficients are negative (r = -0.7320; rho = -0.7304), 
+        indicating that the relationship is inverse in direction.
+
+    </div>
+
+</div>
+
+<!-- ================= DISCUSSION ================= -->
+
+<div class="box">
+
+    <div class="section-title">
+        DISCUSSION
+    </div>
+
+    <div class="paragraph-text">
+
+        The scatter plot, together with the Pearson and Spearman correlation tests, 
+        indicates that there is a significant inverse relationship between regional price volatility 
+        from 2021 to 2025 and the region’s poverty incidence among the population. 
+        The graph showed a downward-sloping trendline, suggesting that regions with higher poverty incidence 
+        generally experienced lower food price volatility, while regions with lower poverty incidence tended 
+        to experience greater price fluctuations. The distribution of the data points also suggests that the 
+        relationship between the two variables is relatively consistent across regions.
+        <br><br>
+        This visual observation was supported by the statistical results of the correlation tests. 
+        The Pearson correlation coefficient of −0.7320 indicates a strong negative linear relationship 
+        between regional price volatility and poverty incidence. Similarly, the Spearman correlation coefficient of 
+        −0.7304 also reflects a strong negative association, confirming that the relationship remains consistent even 
+        when analyzed using ranked data.
+        <br><br>
+        The p-values obtained from both tests P=0.0008 and p=0.0009 are lower than the significance level of 0.05 
+        which means that the relationship is statistically significant. Therefore, the null hypothesis stating that 
+        there is no significant relationship between regional price volatility and poverty incidence is rejected.
+        <br><br>
+        The similarity between the graphical trend and the statistical test results strengthens the reliability of the findings. 
+        Both the visualization and the correlation analyses consistently show that higher poverty incidence is associated with 
+        lower levels of food price volatility.
+
+    </div>
+
+</div>
+
+<!-- ================= QUICKLINK ================= -->
+
+<div class="box">
+
+    <div class="section-title">
+        QUICKLINK
+    </div>
+
+    <div class="content-row">
+
+        <div class="content-title">
+            CONTENT LIST
+        </div>
+
+        <div class="line"></div>
+
+        <a class="visit" href="index.html">
+            VI$IT
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div>CS 132 - THX</div>
+
+    <div>GROUP 7</div>
+
+</footer>
+
+</body>
+</html>

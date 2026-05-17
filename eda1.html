@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>OVERVIEW | ₱RICE CHECK!</title>
+
+<!-- ROBOTO MONO -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+<!-- EXTERNAL CSS FILE -->
+    <link rel="stylesheet" href="format.css">
+</head>
+
+<body>
+
+<!-- ================= TITLE IMAGE ================= -->
+
+<div class="title">
+
+    <img src="others/title.png" alt="Price Check Title">
+
+</div>
+
+<!-- ================= VISUALIZATION 1 ================= -->
+
+<div class="box">
+
+    <div class="section-title">
+        VISUALIZATION
+    </div>
+
+    <div class="paragraph-text">
+
+        We transformed our dataset into intuitive plots and graphs to illustrate 
+        and easily visualize the complex relationships and trends of price per region. 
+        To analyze the synchronization of price spikes across regions, 
+        the Pearson correlation coefficient was applied to spike ratios, 
+        allowing us to quantify how similarly regions experience price surges over time. 
+        The price spike ratio was computed by identifying spikes as prices exceeding the mean 
+        plus standard deviation for each food and region, counting the number of such spikes per month, 
+        and dividing by the total number of food items to obtain the proportion of commodities experiencing 
+        abnormal price increases.
+        <br><br>
+        Across the five heatmaps (2021–2025), regional price spike synchronization shows a clear but varying pattern over time.
+
+    </div>
+
+</div>
+
+<!-- ================= VISUALIZATION 2 ================= -->
+
+<div class="box">
+
+    <div class="section-title">
+        VISUALIZATION
+    </div>
+
+    <div style="display: flex; justify-content: center;">
+        <img src="eda1/corr_matrix_2021.png" alt="heatmap 2021" style="width: 750px; border: 1px solid #111; margin-bottom: 20px;">
+    </div>
+
+    <div class="paragraph-title" style="text-decoration: underline;">
+        Correlation of Regional Price Spike Ratios (2021)
+    </div>
+
+    <div class="paragraph-text">
+        In 2021, correlations are generally moderate and uneven, with stronger co-movement 
+        observed in some clusters while others remain weak.
+    </div>
+
+</div>
+
+<!-- ================= VISUALIZATION 3 ================= -->
+
+<div class="box">
+
+    <div class="section-title">
+        VISUALIZATION
+    </div>
+
+    <div style="display: flex; justify-content: center;">
+        <img src="eda1/corr_matrix_2022.png" alt="heatmap 2022" style="width: 750px; border: 1px solid #111; margin-bottom: 20px;">
+    </div>
+
+    <div class="paragraph-title" style="text-decoration: underline;">
+        Correlation of Regional Price Spike Ratios (2022)
+    </div>
+
+    <div class="paragraph-text">
+        iN 2022, There is very high synchronization among many Luzon and Visayas regions, 
+        but some regions (e,g Region VII, Region XII) begin to show weaker or negative relationships.
+    </div>
+
+</div>
+
+<!-- ================= VISUALIZATION 4 ================= -->
+
+<div class="box">
+
+    <div class="section-title">
+        VISUALIZATION
+    </div>
+
+    <div style="display: flex; justify-content: center;">
+        <img src="eda1/corr_matrix_2023.png" alt="heatmap 2023" style="width: 750px; border: 1px solid #111; margin-bottom: 20px;">
+    </div>
+
+    <div class="paragraph-title" style="text-decoration: underline;">
+        Correlation of Regional Price Spike Ratios (2023)
+    </div>
+
+    <div class="paragraph-text">
+        In 2023, the pattern becomes more fragmented, with mixed and weaker correlations, 
+        suggesting increasing regional divergence.
+    </div>
+
+</div>
+
+<!-- ================= VISUALIZATION 5 ================= -->
+
+<div class="box">
+
+    <div class="section-title">
+        VISUALIZATION
+    </div>
+
+    <div style="display: flex; justify-content: center;">
+        <img src="eda1/corr_matrix_2024.png" alt="heatmap 2024" style="width: 750px; border: 1px solid #111; margin-bottom: 20px;">
+    </div>
+
+    <div class="paragraph-title" style="text-decoration: underline;">
+        Correlation of Regional Price Spike Ratios (2024)
+    </div>
+
+    <div class="paragraph-text">
+        Synchronization rises again in 2024, with many strong positive correlations indicating a return 
+        to more unified price movement.
+    </div>
+
+</div>
+
+<!-- ================= VISUALIZATION 6 ================= -->
+
+<div class="box">
+
+    <div class="section-title">
+        VISUALIZATION
+    </div>
+
+    <div style="display: flex; justify-content: center;">
+        <img src="eda1/corr_matrix_2025.png" alt="heatmap 2025" style="width: 750px; border: 1px solid #111; margin-bottom: 20px;">
+    </div>
+
+    <div class="paragraph-title" style="text-decoration: underline;">
+        Correlation of Regional Price Spike Ratios (2025)
+    </div>
+
+    <div class="paragraph-text">
+        By 2025, correlations are moderate but mixed, showing partial synchronization with 
+        some regions diverging rather than moving together.
+    </div>
+
+</div>
+
+<!-- ================= VISUALIZATION 7 ================= -->
+
+<div class="box">
+
+    <div class="section-title">
+        VISUALIZATION
+    </div>
+
+    <div class="paragraph-text">
+        Notably, earlier years show tighter alignment among regions in Luzon, 
+        while variability in later years reflects differing dynamics across Luzon, Visayas, and Mindanao. 
+        Overall, the results indicate that price spike synchronization is not constant, peaking during systemic shocks 
+        and weakening when regional factors play a larger role.
+        <br><br>
+    </div>
+
+    <div style="display: flex; justify-content: center;">
+        <img src="eda1/avg_sync_bargraph.png" alt="bargraph" style="width: 850px; border: 1px solid #111; margin-bottom: 20px;">
+    </div>
+
+    <div class="paragraph-text">
+        This bar chart shows the average synchronization score of price spikes by region and poverty level. 
+        Low-poverty regions (green), such as NCR, Region I, Region III, and CAR, generally have higher scores (~0.45–0.48), 
+        indicating more synchronized price movements and stronger exposure to national trends. 
+        In contrast, many high-poverty regions (red), particularly in Visayas and Mindanao, have lower scores (~0.20–0.30), 
+        suggesting more irregular and locally driven price behavior.
+    </div>
+
+</div>
+
+<!-- ================= HYPOTHESIS TESTING 1 ================= -->
+
+<div class="box">
+
+    <div class="section-title">
+        HYPOTHESIS TESTING
+    </div>
+
+    <div class="paragraph-text">
+
+        The Mann–Whitney U test was used to compare synchronization scores between low- and high-poverty regions. 
+        This test ranks all observations from lowest to highest and evaluates whether the ranks of 
+        one group are systematically higher or lower than those of the other group.
+        <br><br>
+        For both tests, the hypotheses are defined as follows:
+        <br><br>
+            <ul style="padding-left: 50px;">
+                <li>Null Hypothesis: The co-movement or synchronization of price spikes does not differ 
+                    significantly between regions when grouped by poverty incidence.</li>
+                <li>Alternative Hypothesis: The co-movement or synchronization of price spikes differs significantly 
+                    between regions based on their poverty incidence classification.</li>
+            </ul>
+        <br><br>
+        A significance level of α = 0.05 was used. When the p-value is less than 0.05, 
+        the null hypothesis is rejected, indicating a statistically significant difference between the two poverty groups.
+    </div>
+
+</div>
+
+<!-- ================= HYPOTHESIS TESTING 3 ================= -->
+
+<div class="box">
+
+    <div class="section-title">
+        HYPOTHESIS TESTING
+    </div>
+
+    <div class="paragraph-text">
+
+        The results showed a statistically significant difference between the groups. 
+        Since the p-value is less than 0.05, the null hypothesis is rejected. 
+        This indicates that synchronization levels differ significantly across poverty classifications, 
+        with low-poverty regions exhibiting higher synchronization than high-poverty regions.
+
+    </div>
+
+</div>
+
+<!-- ================= DISCUSSION ================= -->
+
+<div class="box">
+
+    <div class="section-title">
+        DISCUSSION
+    </div>
+
+    <div class="paragraph-text">
+
+        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. 
+        In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. 
+        Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. 
+        Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. 
+        In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. 
+        Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. 
+        Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. 
+        In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. 
+        Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. 
+        Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+        <br><br>
+        Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. 
+        In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. 
+        Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. 
+        Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+
+    </div>
+
+</div>
+
+<!-- ================= QUICKLINK ================= -->
+
+<div class="box">
+
+    <div class="section-title">
+        QUICKLINK
+    </div>
+
+    <div class="content-row">
+
+        <div class="content-title">
+            CONTENT LIST
+        </div>
+
+        <div class="line"></div>
+
+        <a class="visit" href="index.html">
+            VI$IT
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div>CS 132 - THX</div>
+
+    <div>GROUP 7</div>
+
+</footer>
+
+</body>
+</html>

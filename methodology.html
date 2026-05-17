@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>OVERVIEW | ₱RICE CHECK!</title>
+
+<!-- ROBOTO MONO -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+<!-- EXTERNAL CSS FILE -->
+    <link rel="stylesheet" href="format.css">
+</head>
+
+<body>
+
+<!-- ================= TITLE IMAGE ================= -->
+
+<div class="title">
+
+    <img src="others/title.png" alt="Price Check Title">
+
+</div>
+
+<!-- ================= DATA COLLECTION ================= -->
+
+<div class="box">
+
+    <div class="section-title">
+        DATA COLLECTION
+    </div>
+
+    <div class="paragraph-text">
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+    </div>
+
+</div>
+
+<!-- ================= POVERTY INCIDENCE ================= -->
+
+<div class="box">
+
+    <div class="section-title">
+        POVERTY INCIDENCE
+    </div>
+
+    <div class="paragraph">
+
+        <img src="others/poverty_incidence.png" alt="POVERTY INCIDENCE">
+        
+        <div class="text-container">
+            <a class="paragraph-link" href="https://cpbrd.congress.gov.ph/wp-content/uploads/2024/10/FF2024-03-Poverty-Statisrics-UPdate-Fiirst-Semester-2023.pdf?fbclid=IwY2xjawQOAq1leHRuA2FlbQIxMABicmlkETF3azZvTDhEdTZCWmxpbHRkc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHhxnUfsEEUMA74UE2Ig6RGM13nYNZJXzBSshH_T2dhDY4YZRIbcLXMjJOosA_aem_JuRvKVaEGJhlDiljM38WHw">
+                2023 Regional Poverty Incidence among Population
+            </a>
+
+            <div class="paragraph-text">
+                The 2023 Regional Poverty Incidence among Population data came from the Philippine Statistics Authority, 
+                which is the government agency responsible for collecting, compiling, 
+                and publishing official statistics in the Philippines.
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= FOOD PRICES ================= -->
+
+<div class="box">
+
+    <div class="section-title">
+        FOOD PRICE
+    </div>
+
+    <div class="paragraph">
+
+        <div class="profile">
+            <img src="others/food_prices.png" alt="Food Price">
+
+            <a class="profile-source" href="https://www.aljazeera.com/economy/2023/4/3/asias-living-costs-are-rising-in-philippines-theyre-soaring">
+                <p style="text-align: center;">
+                    https://www.aljazeera.com/economy/2023/4/3/asias-living-costs-are-rising-in-philippines-theyre-soaring
+                </p>
+                <br>
+            </a>
+        </div>
+
+        <div class="text-container">
+            <a class="paragraph-link" href="https://data.humdata.org/dataset/wfp-food-prices-for-philippines">
+                Monthly Regional Food Price For selected Commodity from January 2021 to December 2025
+            </a>
+
+            <div class="paragraph-text">
+                The data for Monthly Regional Food Price For Selected Commodity from January 2021 to December 2025 is sourced from the Humanitarian Data Exchange (HDX), 
+                a platform managed by the United Nations Office for the Coordination of Humanitarian Affairs (OCHA). 
+                The dataset contains prices of basic commodities from 2000 to 2025, categorized by regions in the Philippines.
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= DATA PREPROCESSING ================= -->
+
+<div class="box">
+
+    <div class="section-title">
+        DATA COLLECTION
+    </div>
+
+    <div class="paragraph-text">
+
+        We processed over 91,000 data points from the Humanitarian Data Exchange (HDX) 
+        to identify key food price trends across the Philippines. 
+        Our preprocessing involved the following steps:
+
+    </div>
+
+</div>
+
+<!-- ================= DATA PREPROCESSING 2 ================= -->
+
+<div class="box">
+
+    <div class="section-title">
+        DATA PREPROCESSING
+    </div>
+
+    <div class="content-item">
+
+        <div class="content-row">
+
+            <div class="content-title">
+                STRATEGIC FILTERING
+            </div>
+
+            <div class="line"></div>
+
+            <div class="content-title">
+                $1
+            </div>
+
+        </div>
+
+        <div class="subtitle">
+            limited the dataset to records from 2021–2025 to reflect the current economic climate.
+        </div>
+
+    </div>
+
+    <div class="content-item">
+
+        <div class="content-row">
+
+            <div class="content-title">
+                REGIONAL GROUPING
+            </div>
+
+            <div class="line"></div>
+
+            <div class="content-title">
+                $2
+            </div>
+
+        </div>
+
+        <div class="subtitle">
+            organized the data by region and year to track how price changes moved across the country.
+        </div>
+
+    </div>
+
+    <div class="content-item">
+
+        <div class="content-row">
+
+            <div class="content-title">
+                DATA INTERSECTION
+            </div>
+
+            <div class="line"></div>
+
+            <div class="content-title">
+                $3
+            </div>
+
+        </div>
+
+        <div class="subtitle">
+            focused only on commodities consistently recorded across all regions to ensure reliable comparisons.
+        </div>
+
+    </div>
+
+    <div class="content-item">
+
+        <div class="content-row">
+
+            <div class="content-title">
+                FREQUENCY RANKING
+            </div>
+
+            <div class="line"></div>
+
+            <div class="content-title">
+                $4
+            </div>
+
+        </div>
+
+        <div class="subtitle">
+            prioritized commodities based on the Food Consumption Survey from the 2021 
+            Expanded National Nutrition Survey conducted by DOST–FNRI.
+        </div>
+
+    </div>
+
+    <div class="content-item">
+
+        <div class="content-row">
+
+            <div class="content-title">
+                HANDLING MISSING VALUES
+            </div>
+
+            <div class="line"></div>
+
+            <div class="content-title">
+                $5
+            </div>
+
+        </div>
+
+        <div class="subtitle">
+            filled missing price data using interpolation between prices within the same region.
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ================= DATA PREPROCESSING 3 ================= -->
+
+<div class="box">
+
+    <div class="section-title">
+        DATA PREPROCESSING
+    </div>
+
+    <div class="paragraph-text">
+        THE FOLLOWING ARE THE LIST OF COMMODITIES CHOSEN AFTER FILTERING:
+        <br><br>
+    </div>
+
+    <div class="content-item">
+
+        <div class="content-row">
+
+            <div class="content-title">
+                BEEF
+            </div>
+
+            <div class="line"></div>
+
+            <div class="content-title">
+                $1
+            </div>
+
+        </div>
+    </div>
+
+    <div class="content-item">
+
+        <div class="content-row">
+
+            <div class="content-title">
+                CABBAGE
+            </div>
+
+            <div class="line"></div>
+
+            <div class="content-title">
+                $2
+            </div>
+
+        </div>
+    </div>
+
+    <div class="content-item">
+
+        <div class="content-row">
+
+            <div class="content-title">
+                EGGPLANTS
+            </div>
+
+            <div class="line"></div>
+
+            <div class="content-title">
+                $3
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="content-item">
+
+        <div class="content-row">
+
+            <div class="content-title">
+                EGGS
+            </div>
+
+            <div class="line"></div>
+
+            <div class="content-title">
+                $4
+            </div>
+
+        </div>
+    </div>
+
+    <div class="content-item">
+
+        <div class="content-row">
+
+            <div class="content-title">
+                MEAT
+            </div>
+
+            <div class="line"></div>
+
+            <div class="content-title">
+                $5
+            </div>
+
+        </div>
+    </div>
+
+    <div class="content-item">
+
+        <div class="content-row">
+
+            <div class="content-title">
+                RICE
+            </div>
+
+            <div class="line"></div>
+
+            <div class="content-title">
+                $6
+            </div>
+
+        </div>
+    </div>
+
+    <div class="content-item">
+
+        <div class="content-row">
+
+            <div class="content-title">
+                TOMATO
+            </div>
+
+            <div class="line"></div>
+
+            <div class="content-title">
+                $7
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- ================= QUICKLINK ================= -->
+
+<div class="box">
+
+    <div class="section-title">
+        QUICKLINK
+    </div>
+
+    <div class="content-row">
+
+        <div class="content-title">
+            CONTENT LIST
+        </div>
+
+        <div class="line"></div>
+
+        <a class="visit" href="index.html">
+            VI$IT
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div>CS 132 - THX</div>
+
+    <div>GROUP 7</div>
+
+</footer>
+
+</body>
+</html>
