@@ -172,6 +172,14 @@ body{
     letter-spacing:3px;
 }
 
+.lowercase-symbol {
+    text-transform: none !important;
+}
+
+.underline-text {
+    text-decoration: underline;
+}
+
 /* ================= HYPOTHESIS TESTING ================= */
 
 .hypothesis-container{
