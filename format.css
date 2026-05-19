@@ -172,6 +172,68 @@ body{
     letter-spacing:3px;
 }
 
+/* ================= HYPOTHESIS TESTING ================= */
+
+.hypothesis-container{
+    display:flex;
+    justify-content:center;
+    align-items:stretch;
+    gap:0;
+    margin-top:20px;
+}
+
+.hypothesis-column{
+    flex:1;
+    padding:20px 35px;
+    text-align:center;
+}
+
+.hypothesis-column.left{
+    border-right:2px dotted #111;
+}
+
+.hypothesis-title{
+    font-size:22px;
+    text-transform:uppercase;
+    line-height:1.6;
+    margin-bottom:30px;
+}
+
+.hypothesis-row{
+    padding:55px 0;
+    border-top:2px dotted #111;
+}
+
+.hypothesis-text{
+    font-size:22px;
+    text-transform:uppercase;
+    line-height:1.6;
+}
+
+/* ================= SINGLE TEST ================= */
+
+.single-test{
+    text-align:center;
+    margin-top:20px;
+}
+
+.single-title{
+    font-size:32px;
+    text-transform:uppercase;
+    margin-bottom:40px;
+}
+
+.single-row{
+    padding:55px 0;
+    border-top:2px dotted #111;
+}
+
+.single-text{
+    font-size:28px;
+    text-transform:uppercase;
+    line-height:1.6;
+}
+
 /* ================= FOOTER ================= */
 
 footer{
